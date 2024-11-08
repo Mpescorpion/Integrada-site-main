@@ -76,6 +76,7 @@ canvas#background {
 }
 
 .imagem-pessoal {
+  position: absolute;
     width: 200px; /* Define o tamanho da foto conforme necessário */
     height: 200px; /* Define a altura da foto */
     border-radius: 50%; /* Torna a imagem redonda */
