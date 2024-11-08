@@ -59,7 +59,7 @@ canvas#background {
   nav a:hover {
     background-color: rgba(255, 255, 255, 0.5);
   }
-  
+   
   /* Rodapé */
   footer {
     position: absolute;
@@ -69,4 +69,30 @@ canvas#background {
     font-size: 14px;
     z-index: 10;
   }
+  .pessoal-info {
+    text-align: center; /* Alinha o conteúdo ao centro */
+    margin-top: 300px; /* Adiciona um espaço acima */
+    padding-left: 1000px;
+}
+
+.imagem-pessoal {
+    width: 200px; /* Define o tamanho da foto conforme necessário */
+    height: 200px; /* Define a altura da foto */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Ajusta a imagem dentro da área definida */
+    margin-bottom: 15px; /* Adiciona um espaço entre a foto e o link */
+}
+
+.curriculo-link {
+    font-size: 18px; /* Define o tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007BFF; /* Cor azul do link */
+    font-weight: bold; /* Deixa o link em negrito */
+    transition: color 0.3s ease; /* Adiciona um efeito de transição */
+}
+
+.curriculo-link:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+}
+  
   
