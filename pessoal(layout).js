@@ -10,5 +10,5 @@ function setup() {
     for (let i = 0; i < 14000; i++) {
       rect(random(width), random(height), 2, 2); // Desenha pequenos quadrados aleatórios
     }
-  }
+  }//ola e fodase
   
