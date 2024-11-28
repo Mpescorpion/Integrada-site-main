@@ -1,1 +1,55 @@
+body {
+    background-color: #111; /* Fundo escuro */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* Configuração para imagem no estilo Stories */
+.card-img-top {
+    width: 100%;
+    height: 200vh; /* Ocupa toda a altura da tela */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+}
+
+/* Texto sobreposto */
+.card-body {
+    position: absolute; /* Sobrepõe na imagem */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo translúcido para contraste */
+    color: #fff;
+    text-align: center;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .card-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
 
