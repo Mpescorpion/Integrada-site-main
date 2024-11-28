@@ -1,14 +1,53 @@
-// Função para configurar o canvas e a animação
-function setup() {
-    createCanvas(windowWidth, windowHeight); // Cria um canvas que preenche a tela inteira
+const canvas = document.getElementById('galaxy-background');
+const ctx = canvas.getContext('2d');
+
+let stars = [];
+const starCount = 300;
+const color = 'rgba(1, 2, 34, 0.945)';
+
+// Ajusta o tamanho do canvas
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+// Cria estrelas
+function createStars() {
+  stars = [];
+  for (let i = 0; i < starCount; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 2,
+      speed: Math.random() * 0.5,
+      alpha: Math.random(),
+    });
   }
-  
-  // Função que desenha a animação no canvas
-  function draw() {
-    background('rgba(1, 2, 34, 0.945)'); // Cor de fundo solicitada
-    noStroke(); // Remove a borda das formas desenhadas
-    for (let i = 0; i < 14000; i++) {
-      rect(random(width), random(height), 2, 2); // Desenha pequenos quadrados aleatórios
+}
+
+// Animação das estrelas
+function animateStars() {
+  ctx.fillStyle = color;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.fillStyle = 'white';
+  for (let star of stars) {
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.globalAlpha = star.alpha;
+    ctx.fill();
+
+    // Move as estrelas
+    star.y += star.speed;
+    if (star.y > canvas.height) {
+      star.y = 0;
+      star.x = Math.random() * canvas.width;
     }
-  }//ola e fodase
-  
+  }
+  requestAnimationFrame(animateStars);
+}
+
+createStars();
+animateStars();
