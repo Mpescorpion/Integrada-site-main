@@ -71,29 +71,39 @@ canvas#background {
   }
   .pessoal-info {
     text-align: center; /* Alinha o conteúdo ao centro */
-    margin-top: 300px; /* Adiciona um espaço acima */
-    padding-left: 1000px;
+    margin-top: 200px; /* Adiciona um espaço acima */
+    padding-left: 1150px;
 }
 
 .imagem-pessoal {
   position: absolute;
-    width: 200px; /* Define o tamanho da foto conforme necessário */
-    height: 200px; /* Define a altura da foto */
-    border-radius: 50%; /* Torna a imagem redonda */
+    width: 300px; /* Define o tamanho da foto conforme necessário */
+    height: 300px; /* Define a altura da foto */
+    border: 4px solid rgba(255, 255, 255, 0.2); /* Borda translúcida */border: 4px solid rgba(255, 255, 255, 0.2); /* Borda translúcida */
+    border-radius: 100%; /* Torna a imagem redonda */
     object-fit: cover; /* Ajusta a imagem dentro da área definida */
-    margin-bottom: 15px; /* Adiciona um espaço entre a foto e o link */
+    margin-bottom: 100px; /* Adiciona um espaço entre a foto e o link */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 
+    0 0 15px rgba(0, 120, 255, 0.5); /* Efeito neon/brilho */
+    margin-top: 50px; /* Ajusta o espaçamento vertical */
+    left: 90%; /* Centraliza horizontalmente no lado direito */
+    transform: translateX(-50%);
 }
 
 .curriculo-link {
-    font-size: 18px; /* Define o tamanho da fonte */
+    font-size: 23px; /* Define o tamanho da fonte */
     text-decoration: none; /* Remove o sublinhado do link */
     color: #007BFF; /* Cor azul do link */
     font-weight: bold; /* Deixa o link em negrito */
+    margin-top: 1px; /* Espaço entre o link e a imagem */
+    display: inline-block; /* Torna o link fácil de alinhar */
     transition: color 0.3s ease; /* Adiciona um efeito de transição */
+    text-align: center; /* Centraliza o texto do link */
 }
 
 .curriculo-link:hover {
     color: #0056b3; /* Cor do link ao passar o mouse */
 }
+
   
   
