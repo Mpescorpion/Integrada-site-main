@@ -1,1 +1,85 @@
-
+/* Estilo geral */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Fundo animado */
+  canvas#mathCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Estilo do header */
+  header {
+    margin-top: 50px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 18px;
+  }
+  
+  /* Estilo dos links com imagens */
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 150px;
+  }
+  
+  .link-item {
+    
+    display: flex; /* Faz o link e a imagem ficarem alinhados */
+    flex-direction: column; /* Posiciona o texto abaixo da imagem */
+    align-items: center; /* Centraliza o texto e imagem */
+    text-decoration: none; /* Remove sublinhado do link */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+  }
+  
+  .link-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .link-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover; /* Garante que a imagem fique dentro do tamanho definido */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .link-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    transition: transform 0.3s ease; /* Suaviza a transição */
+  }
+  
+  
+  /* Rodapé */
+  footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  
