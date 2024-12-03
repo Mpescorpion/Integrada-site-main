@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrada</title>
+  
+  <!-- Link para o Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Arquivo CSS customizado -->
+  <link rel="stylesheet" href="integrada(lin).css">
+</head>
+<body>
+
+  <!-- Canvas para a animação de fundo -->
+  <canvas id="background"></canvas>
+
+  <!-- Cabeçalho -->
+  <header class="container text-center py-5">
+    <h1 class="display-4">Integrada - Universo de Saberes 🎥🖼️🌌</h1>
+  </header>
+
+  <!-- Conteúdo Principal com Carrossel -->
+  <main class="container my-5">
+    <div id="carouselIntegrada" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicadores do Carrossel -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselIntegrada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselIntegrada" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+
+      <!-- Itens do Carrossel -->
+      <div class="carousel-inner">
+        <!-- Slide 1 - Imagem -->
+        <div class="carousel-item active">
+          <img src="fotos/integrda(lin1)..jpg" class="d-block w-100" alt="Integrada Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Livro Onirico</h5>
+            <p>Durante esse bimestre, produzimos um livro onirico, onde tivermos que adicionar um topico de cada materia.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Vídeo -->
+        <div class="carousel-item">
+          <video class="d-block w-100" controls>
+            <source src="videos/video do livro.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Video do Livro</h5>
+            <p>Segue o video do livro 👆.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles do Carrossel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIntegrada" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIntegrada" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="container text-center py-3 mt-5">
+    <p>© 2024. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script da animação de fundo -->
+  <script src="integrada(lin).js"></script>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
 
