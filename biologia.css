@@ -1,1 +1,83 @@
+/* Reset e Fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #001f3f;
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Fundo da animação */
+#animation-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #001f3f;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo do Carrossel */
+.carousel-inner {
+    height: auto; /* Ajusta a altura dinamicamente */
+}
+
+.carousel-item img {
+    width: 100%; /* A imagem ocupa toda a largura */
+    max-height: 65vh; /* Limita a altura máxima da imagem */
+    object-fit: contain; /* Ajusta a proporção da imagem sem distorcer */
+    margin: auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+}
+
+/* Legenda do Carrossel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    max-width: 80%; /* Limita a largura das legendas */
+    margin: auto; /* Centraliza a legenda */
+}
+
+/* Botões do Carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Deixa os ícones mais visíveis em fundo escuro */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajusta o tamanho dos botões */
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #bbb;
+    border-top: 1px solid #333;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
 
