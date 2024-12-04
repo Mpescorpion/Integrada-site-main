@@ -1,1 +1,75 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #010222;
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Animação de fundo */
+.animation-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(0, 0, 0, 0.8));
+    animation: moveBackground 15s ease-in-out infinite;
+}
+
+/* Animação do fundo */
+@keyframes moveBackground {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100%, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Estilo do cabeçalho */
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
+
+/* Estilo do carrossel */
+.carousel-item img,
+.carousel-item video {
+    max-height: 60vh; /* Limita a altura máxima */
+    width: 100%; /* Garante que a largura ocupe o espaço do carrossel */
+    object-fit: contain; /* Ajusta as proporções sem distorcer */
+    margin: auto; /* Centraliza o conteúdo */
+    display: block;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    max-width: 80%; /* Limita a largura das legendas */
+    margin: auto;
+}
+
+/* Ajusta a altura do carrossel para ocupar espaço suficiente */
+.carousel-inner {
+    height: auto; /* Permite que se ajuste dinamicamente */
+}
+
+/* Botões de controle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Deixa os ícones mais visíveis em fundo escuro */
+}
 
