@@ -1,1 +1,89 @@
+/* Reset e Fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #001f3f;
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Fundo da animação */
+#animation-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #001f3f;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #0078ff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aad4ff;
+    margin-top: 10px;
+}
+
+/* Container das cartas */
+.cartas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 120px); /* Ajuste para o header */
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo das Cartas */
+.carta {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.carta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
