@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Química</title>
+  
+  <!-- Link para o Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Seu arquivo CSS customizado -->
+  <link rel="stylesheet" href="quimica.css">
+</head>
+<body>
+
+  <!-- Canvas para a Animação -->
+  <canvas id="animation-background"></canvas>
+
+  <!-- Cabeçalho -->
+  <header class="container text-center py-5">
+    <h1 class="display-4">Química - Os Experimentos Universais 🧪🌌✨</h1>
+  </header>
+
+  <!-- Conteúdo Principal com Carrossel -->
+  <main class="container my-5">
+    <div id="carouselQuimica" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicadores do Carrossel -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselQuimica" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselQuimica" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselQuimica" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Itens do Carrossel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="fotos/quimica 1.jpg" class="d-block w-100" alt="Química Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Atividade de Quimica  - Polimeros Naturais e Sinteticos: Lã e Amido</h5>
+            <p>Nesta atividade, tivermos que a partir de um padlet explicar um pouco mais dos polimeros, tanto sinteticos ou naturais, onde meu acabou tendo que explicar como funciona a lã e o amido.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="fotos/quimica 2 .jpg" class="d-block w-100" alt="Química Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lã</h5>
+            <p> Neste slide explicamos um pouco mais da lã </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="fotos/quimica 3 .jpg" class="d-block w-100" alt="Química Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Amido</h5>
+            <p> E por fim, nesse slide explicamos como funcionou o Amido.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles do Carrossel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselQuimica" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselQuimica" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="container text-center py-3 mt-5">
+    <p>© 2024. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script para a Animação de Fundo -->
+  <script src="quimica.js"></script>
+
+  <!-- Script para o Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
 
